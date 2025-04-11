@@ -1,0 +1,280 @@
+// body{
+//     margin: 0 auto;
+//     position: static;
+//     // background-color: lightcoral;
+//     font-size: medium;
+//     position: static;
+//     font-family: "Raleway,sans-serif";
+//     max-width: 1280px;
+
+//     a {
+//         color:rgb(83, 81, 81);
+//         text-decoration: none;
+        
+//     }
+// }
+
+// nav {
+//     width: 50%;
+//     position: fixed;
+//     display: flex;
+//     align-items: flex-end;
+//     justify-content: space-between;
+//     margin: 5% auto auto 25% ;
+       
+
+//     .burger-menu {
+
+//         width: 50px;
+//         height: 35px;
+//         display: flex;
+//         flex-wrap: wrap;
+//         flex-direction: column;
+//         justify-content: space-around;
+
+//         div{
+//             height: 2px;
+//             background-color: rgb(80, 80, 80);
+//             width: 60%;
+//         }
+
+//     }
+    
+//     svg{
+//         width: 60%;
+//     }
+//     .clik{
+//         a{
+//             svg{ 
+//                 width: 20px;
+//             }
+//         }
+//     }
+    
+//     div-svg{
+//         gap: 10px;
+//         display: flex; 
+//         flex-direction: row;
+//         align-items: flex-end;
+//     }
+// }
+
+
+// main{
+//     .wrap-main{
+         
+//         margin: auto;
+//         display: grid;
+//         grid-template-columns:repeat(2,1fr);
+//         // grid-template-rows: repeat(2,1fr);
+//         gap: 1rem;
+
+//         img{
+//             max-width: 100%;
+//             width: 100%;
+//             height: 100%;
+//             // aspect-ratio: 1/1;
+//             display: block;
+//         }
+//         .figure{
+//             grid-column: 1fr;
+//             position: relative;
+//             text-align: center;
+
+//             .txt{
+//                 position: absolute;
+//                 bottom: 5%;
+//                 left: 50%;
+//                 translate: -50%;
+//                 color: white;
+//                 opacity: 0.7;
+//             }
+//         }
+//     }
+// }
+
+// section {
+        
+//     .card{
+//         height: 300px;
+//         display: grid;
+//         grid-template-rows: repeat(2,1fr);
+//         width: 900px;
+//         padding: 1%;
+//         border: 1px solid ;
+//         margin: 20px 20px auto;
+//         justify-content: space-between;
+//     }
+
+//     h1 {
+//         grid-row: 1,1fr;
+//         font-size: 20%;
+//     }
+
+// }
+
+// .caroussel {
+
+//     text-align: center;
+//     font-size: small;
+
+//     .wrap-card {
+
+//         gap: 1rem;
+//         display: grid;
+//         grid-template-columns: repeat(4,1fr);
+//         padding: 1rem;
+
+//         figure {
+            
+//             position: relative;
+
+//             h1{
+//                 position: absolute;
+//                 color: white;
+//                 bottom: 1%;
+//                 z-index: 2;
+//             }
+//         }
+//     }
+// }
+// .shop {
+
+//     text-align: center;
+//     margin: auto 50%;
+
+//     a {
+//         margin: 0 48% ;
+//     }
+
+//     .wrap-card {
+
+//         display: grid;
+//         grid-template-columns: repeat(2,1fr);
+//         grid-template-rows: repeat(2,1fr);
+//         gap: 1rem;
+//         aspect-ratio: 1/1;
+//         margin: auto 5%;
+//     }
+
+// }
+
+
+
+// .end {
+
+//     margin: auto 2% auto auto;
+//     text-align: center;
+//     font-size: small;
+//     color: gray;
+    
+
+//     a {
+//         margin: 10% auto 5% 40%;
+//         font-size: larger;
+//     }
+    
+    
+//     details {
+//         margin: 0 auto auto 5%;
+//         text-align: left;
+//     }
+    
+//     .cardeuh {
+//         font-family: "Cormorant Garamond", serif;
+//         margin-top: 2%;
+//         background-image:url(/img/Newsletter_G3.jpg);
+//         color: rgb(18, 17, 17);
+//         height: 300px;
+//         background-position: center;
+//         object-fit: cover;
+//         font-size: small;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//     }
+
+//     .wrap-card {
+//         display: grid;
+//         grid-template-columns: repeat(2,1fr);
+//         grid-template-rows: repeat(2,1fr);
+//         gap: 1rem;
+//         aspect-ratio: 1/1;
+//         margin: auto 5%;
+        
+        
+//     }
+
+//     hr {
+        
+//         width: 90% ;
+//         margin-top: 40px;
+//         margin-bottom: 10px;
+//         margin-left: auto;
+//         margin-right: auto;
+//     }
+    
+//     svg {
+//         width: 40%;
+//         margin-top: 20%;
+//     }
+//     .form {
+//         width: 100%;
+//         margin: 10px  auto auto;
+        
+//         a{
+//             text-decoration: none;
+//             color: gray;
+//             font-weight: bolder;
+            
+//         }
+//         display: flex;
+//         align-items: center;
+//         border-bottom: 2px solid #aaa;
+//         width: 300px;
+      
+//         input {
+        
+//           flex: 1;
+//           border: none;
+//           padding: 10px 0;
+//           font-size: 14px;
+//           background: transparent;
+//           outline: none;
+//         }
+      
+//         .btn {
+
+//           border: none;
+//           background: none;
+//           color: #000000;
+//           font-size: 12px;
+//           letter-spacing: 1px;
+//           cursor: pointer;
+//           padding: 0 10px;
+
+//         }
+       
+//     }
+    
+//     .icone {
+
+//         display: flex;
+
+//         svg {   
+
+//             width: 2%;
+
+//         }
+        
+//     }
+
+// }
+// footer {
+//     ul {
+//         list-style-type: none;
+//     }
+// }
+// @media screen and (min-width:550px) and (max-width:980px) {
+    
+// }

@@ -1,0 +1,206 @@
+.main-book {
+
+    .wrapper{
+        max-width: 90%;
+        margin: auto;
+
+        .gridcontainer{
+
+            .no-mobile {
+                display: none;
+            }
+
+            details{
+                border-top: 1px solid gray;
+                border-bottom: 1px solid gray;
+                margin-top: 50px;
+                
+
+                summary {
+                    font-family: "Cormorant Garamond", serif;
+                    font-size: 24px;
+                    
+                }
+
+                p { 
+                    font-size: 16px;
+                    font-style: italic;
+                    color:rgb(35, 35, 35);
+                    margin: 10px 0 5px;
+                    padding: 15px;
+                }
+
+            }
+
+        }
+        
+        .sticky-bloc {
+            margin-top: 50px;
+            
+            h2 {
+                font-family: "Cormorant Garamond", serif;
+                font-size: 28px;
+                font-weight: 400;
+            }
+            
+            p:first-of-type {
+                margin: 15px 0 50px 0;
+                border-bottom: 1px solid rgb(158, 156, 156);
+            }
+            .number{
+                margin-top: 15px;
+                margin-bottom: 30px;
+                display: flex;
+                border: 1px solid gray;
+                width: 100px;
+                justify-content: space-evenly;
+                padding: 8px 0;
+
+                span {
+                    font-size: 20px;
+                }
+                
+            }
+            
+            a {
+                text-decoration: none;
+                color: black;
+                border: solid 1px rgb(201, 201, 201);
+                background-color: rgb(185, 183, 183);
+                padding: 10px;
+                display: block;
+                text-align: center;
+                margin-bottom: 30px;
+                font-size: 11px;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            .book-info{
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+               
+                img{
+                    width: 60px;
+                }
+
+                p{
+                    width: 60%;
+                    text-align: center;
+                    border: 0;
+                    margin: 0;
+
+                }
+                .bouton-small {
+                    a {
+                        margin: 0;
+                    }
+                }
+
+            }
+            .icone-share {
+                margin-top: 25px;
+                
+                svg{
+                    display: inline-block;
+                    width: 20px;
+                }
+            }
+        }
+        
+    } 
+    
+    .wrapper2 {
+        // max-width: 90%;
+        margin-top: 50px;
+
+        h2 {
+            margin-bottom: 25px;
+            font-family: "Cormorant Garamond", serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: rgb(35, 35, 35);
+        }
+
+        .grid-book {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 10px;
+
+            a{
+                text-decoration: none;
+                color: #000;
+                text-align: center;
+            }
+
+            figure {
+               
+                .img-hide {
+                    position: absolute;
+                    opacity: 0;
+                }
+
+                p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: rgb(104, 103, 103);
+
+                }
+                p:nth-of-type(2){
+                    color: #000;
+                }
+            }
+           
+        }
+
+    }
+
+    @media screen and (min-width:500px) and (max-width:960px) {
+        
+        .wrapper2{
+
+            .grid-book{
+                grid-template-columns: repeat(4,1fr);
+                
+            }
+        }
+    }
+    // version Large
+    @media screen and (min-width:960px) {
+        .wrapper{
+            display: grid;
+            grid-template-columns: 900px 1fr;
+            gap: 25px;
+
+            .gridcontainer {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 10px;                
+                .no-mobile{
+                    display: block;
+                }
+
+                details {
+                    grid-column: span 2;
+                }
+            }
+            .sticky-bloc{
+                position: sticky;
+                top: 0;
+                height: fit-content;
+                
+            }
+        }   
+        .wrapper2 {
+            display: flex;
+            flex-direction: column;
+            .grid-book {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+            }
+        }
+    }
+}

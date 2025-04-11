@@ -1,0 +1,154 @@
+body {
+    font-family: "Raleway", sans-serif;
+}
+header {
+    .no-mobile {
+        display: none;
+    }
+
+    .banner-pub {
+        text-align: center;
+        padding: 8px 0;
+        background-color: #ebebe7;
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .wrapper {
+        max-width: 90%;
+        display: flex;
+        justify-content: space-between;
+
+
+        .burger {
+            margin-left: 10px;
+            width: 40px;
+            height: 40px;
+            position: relative;
+
+            span {
+                display: inline-block;
+                height: 1px;
+                width: 50%;
+                background-color: black;
+                position: absolute;
+                top: 50%;
+                display: flex;
+                
+            }
+
+            span:first-child {
+                top: 30%;
+            }
+            span:last-child {
+                top: 70%;
+            }
+        }
+
+        .logo {
+            max-width: 200px;
+            width: 100%;
+ 
+        }
+
+        .emote {
+            margin-right: 10px;
+        }
+    }
+    // taille medium screen
+    @media screen and (min-width:500px) and (max-width:960px) {
+        .wrapper {
+            .logo {
+                max-width: 300px;
+            }
+        }
+    }
+    // taille large
+    @media screen and (min-width: 960px) {
+        .wrapper{
+            margin: auto;
+            flex-direction: column;
+        
+            align-items: center;
+            max-width: 1400px;
+
+
+            .logo {
+                max-width: 550px;
+            }
+        }
+
+        .no-desktop{
+            display: none;
+        }
+        
+        .menu {
+            display: block;
+            width: 100%;
+        }
+
+        ul {
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            
+
+            img{
+                width: 25px;
+            }
+
+            li {
+                display: inline-block;
+                margin: 30px 10px 15px;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(23, 23, 23);
+                    text-transform: uppercase;
+                    
+
+                } 
+            }
+
+            .nav{
+                position: relative;
+
+                .subnav {
+                    width: 250px;
+                    position: absolute;
+                    left: 0%;
+                    padding: 0;
+                    margin: 0;
+                    top: 30px;
+                    display: none;
+
+                    li {
+                        margin: 10px 0 0 0 ;
+                    }
+                }
+
+            } 
+            
+            .nav:hover .subnav{
+                display: flex;
+                flex-direction: column;
+            }
+
+            li:first-child {
+                margin-right: auto;
+            }
+
+            li:last-child {
+                margin-left: auto;
+            }
+            
+        }
+    } 
+        
+}
+
+
+
